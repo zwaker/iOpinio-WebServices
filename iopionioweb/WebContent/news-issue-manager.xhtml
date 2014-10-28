@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:f="http://java.sun.com/jsf/core"      
+      xmlns:h="http://java.sun.com/jsf/html">
+ 
+    <h:head><title>JSF 2.0  World</title>
+    </h:head>
+    <h:body>
+    	<h3>JSF 2.0 Hello World Example - hello.xhtml</h3>
+    	<h:form>
+    	
+    	
+    		<h:commandButton action="#{newsForIssueManagerController.saveOrUpdate}" value="Save/Upade"></h:commandButton>
+    		
+    		
+    	   IINtel News Section
+    	   <br/>
+    		Heading<h:inputText value="#{newsForIssueManagerController.news.heading}" size="100"></h:inputText><br/>
+    		Image URL:<h:inputText value="#{newsForIssueManagerController.news.imageUrl}" cols="100" rows="20"></h:inputText><br/>
+    		Definition Details<h:inputTextarea value="#{newsForIssueManagerController.news.definitionDetails}" cols="100" rows="20"></h:inputTextarea><br/>
+       		Source URL:<h:inputText value="#{newsForIssueManagerController.news.sourceUrl}" cols="100" rows="20"></h:inputText><br/>
+    		Source:<h:inputText value="#{newsForIssueManagerController.news.source}" cols="100" rows="20"></h:inputText><br/>
+    		
+    	</h:form>
+    </h:body>
+</html>

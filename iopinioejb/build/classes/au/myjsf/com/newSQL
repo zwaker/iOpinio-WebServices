@@ -1,0 +1,9 @@
+SELECT * FROM MYKILLERAPP.USERS;
+CREATE TABLE mykillerapp.Product (
+		id int generated always as identity, ch char(50),
+		name VARCHAR(200) NOT NULL,
+		description VARCHAR(2000) NOT NULL,
+		price  VARCHAR(20) NOT NULL,
+		PRIMARY KEY (id)
+	);
+INSERT into mykillerapp.Users values('shantu','shantu')

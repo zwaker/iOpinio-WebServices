@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-modules id="moduleCoreId" project-version="1.5.0">
+    <wb-module deploy-name="iopinioear">
+        <wb-resource deploy-path="/" source-path="/EarContent"/>
+        <wb-resource deploy-path="/" source-path="/lib"/>
+        <dependent-module archiveName="iopinioejb.jar" deploy-path="/" handle="module:/resource/iopinioejb/iopinioejb">
+            <dependent-object/>
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="iopionioweb.war" deploy-path="/" handle="module:/resource/iopionioweb/iopionioweb">
+            <dependent-object/>
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+    </wb-module>
+</project-modules>

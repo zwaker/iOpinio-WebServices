@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:f="http://java.sun.com/jsf/core"      
+      xmlns:h="http://java.sun.com/jsf/html">
+ 
+    <h:head><title>JSF 2.0  World</title>
+    </h:head>
+    <h:body>
+    	<h3>JSF 2.0 Hello World Example - hello.xhtml</h3>
+    	<h:form>
+    	
+    	
+    		<h:commandButton action="#{newsManagerController.saveOrUpdate}" value="Save/Upade"></h:commandButton>
+    		
+    		
+    	   IINtel News Section
+    	   <br/>
+    		Heading<h:inputText value="#{newsManagerController.news.heading}" size="100"></h:inputText><br/>
+    		Image URL:<h:inputText value="#{newsManagerController.news.imageUrl}" cols="100" rows="20"></h:inputText><br/>
+    		Definition Details<h:inputTextarea value="#{newsManagerController.news.definitionDetails}" cols="100" rows="20"></h:inputTextarea><br/>
+       		Source URL:<h:inputText value="#{newsManagerController.news.sourceUrl}" cols="100" rows="20"></h:inputText><br/>
+    		Source:<h:inputText value="#{newsManagerController.news.source}" cols="100" rows="20"></h:inputText><br/>
+    		Demography Type:
+    		<h:selectOneMenu  id="demographyType" value="#{newsManagerController.opinionewsDemography.demographyType}">
+       			 <f:selectItem itemLabel="CONTINENT" itemValue="CONTINENT" />
+       			 <f:selectItem itemLabel="WORLD" itemValue="WORLD" />
+       			 <f:selectItem itemLabel="COUNTRY" itemValue="COUNTRY" />
+        		
+			</h:selectOneMenu>
+		
+    		Continent Id:<h:selectOneMenu  id="continent" value="#{newsManagerController.opinionewsDemography.demographyId}">
+       			 <f:selectItem itemLabel="Africa" itemValue="AF" />
+       			 <f:selectItem itemLabel="Asia" itemValue="AS" />
+       			 <f:selectItem itemLabel="Europe" itemValue="EU" />
+       			 <f:selectItem itemLabel="North America" itemValue="NA" />
+       			 <f:selectItem itemLabel="South America" itemValue="SA" />
+       			 <f:selectItem itemLabel="Oceania" itemValue="OC" />
+       			 <f:selectItem itemLabel="Antarctica" itemValue="AN" />
+       			 <f:selectItem itemLabel="WORLD" itemValue="WL" />
+			</h:selectOneMenu>
+    	</h:form>
+    </h:body>
+</html>
